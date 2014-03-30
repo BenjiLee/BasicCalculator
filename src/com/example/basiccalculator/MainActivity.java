@@ -6,7 +6,8 @@ import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
-
+	
+	//This comment was pull from git and added in windows.
 	private MyMath math;
 	String operators = "+-/*=";
 	double input;
