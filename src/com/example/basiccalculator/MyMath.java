@@ -8,9 +8,9 @@ public class MyMath {
 	Stack<String> lifo = new Stack<String>();
 
 	public String calculate(String equation) {
-		System.out.println("Infix:" + equation);
+		//System.out.println("Infix:" + equation);
 		String postfix = infixToPostfix(equation);
-		System.out.println("Postfix:" + postfix);
+		//System.out.println("Postfix:" + postfix);
 		String result = calculatePostfix(postfix);
 		return result;
 	}
@@ -22,7 +22,6 @@ public class MyMath {
 
 		for (int i = 0; i < p.length(); i++) {
 			String current = Character.toString(p.charAt(i));
-			System.out.println("mewow:"+current + " held: " + held);
 			if (!current.equals(",") && !isOperator(current)) {
 				held = held + current;
 			} else if (current.equals(",")) {
@@ -35,7 +34,7 @@ public class MyMath {
 				else {
 					second = held;
 				}
-				System.out.println("OPERATION:"+lifo.peek().toString()+current+second);
+				//System.out.println("OPERATION:"+lifo.peek().toString()+current+second);
 				held = equate(lifo.pop().toString(), current, second);
 				if (held == "error") {
 					return "error";
