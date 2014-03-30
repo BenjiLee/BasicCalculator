@@ -17,17 +17,15 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
-            android:gravity="right|bottom"
-            android:text="The equation will be here" />
+            android:gravity="right|bottom" />
 
-        <EditText
-            android:id="@+id/EditText_input"
+        <TextView
+            android:id="@+id/TextView_input"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="3"
             android:ems="10"
-            android:gravity="right|bottom"
-            android:text="Input here" />
+            android:gravity="right|bottom" />
 
     </LinearLayout>
 

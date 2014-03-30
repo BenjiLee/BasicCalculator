@@ -7,7 +7,7 @@ public class MyMathTest extends TestCase {
 	
 	
 	  public void testCalculate() {
-		  String result = math.calculate("1.0+2.0*3.0-4.0");
+		  String result = math.calculate("3+4-6*5");
 		  System.out.print(result);
 	    }
 	 
